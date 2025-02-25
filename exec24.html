@@ -1,0 +1,32 @@
+<html>
+    <head><title>Grade exec24</title></head>
+    <body>
+        <script>
+            m=prompt("Enter name");
+            n=prompt("Enter marks out of 100");
+            if(n>=90 && n<=100){
+                document.write(m+":"+n);
+                alert("Grade is A");
+            }
+            else if(n<=89 && n>=80){
+                document.write(m+":"+n);
+                alert("Grade is B");
+            }
+            else if(n<=79 && n>=70){
+                document.write(m+":"+n);
+                alert("Grade is C");
+            }
+            else if(n<=69 && n>=60){
+                document.write(m+":"+n);
+                alert("Grade is D");
+            }
+            else if(n<=60 && n>=0){
+                document.write(m+":"+n);
+                alert("You are failed. Try again");
+            }
+            else{
+                alert("Invalid Marks");
+            }
+        </script>
+    </body>
+</html>

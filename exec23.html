@@ -1,0 +1,32 @@
+<html>
+    <head><title>Arithmetic operator</title></head>
+    <body>
+        <script>
+            m=Number(prompt("Enter first number"));
+            n=Number(prompt("Enter second number"));
+            operand=prompt("Enter operand (+, -, *, /)");
+            if(operand=='+'){
+                c=m+n;
+                alert("Addition of two numbers:"+m+"+"+n+"="+c);
+            }else if(operand=='-'){
+                c=m-n;
+                alert("Subtraction of two numbers:"+m+"-"+n+"="+c);
+            }
+            else if(operand=='*'){
+                c=m*n;
+                alert("Multiplication of two numbers:"+m+"*"+n+"="+c);
+            }
+            else if(operand=='/'){
+                c=m/n;
+                alert("Division of two numbers:"+m+"/"+n+"="+c);
+            }
+            else if(operand=='%'){
+                c=m%n;
+                alert("Remainder of two numbers:"+m+"%"+n+"="+c);
+            }
+            else{
+                alert("Invalid operator");
+            }
+        </script>
+    </body>
+</html>
