@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>
+            Intro to CSS
+        </title>
+        <link href="/labclassexercise/csslab/ex1.css" rel="stylesheet"/>
+        <style>
+            h1
+            {
+                    font-size:50px;
+                    text-align:center;
+                    color:rgba(45,145,245,.45);
+                    text-shadow:2px 2px 1px rgba(245,145,45,.45);
+            }
+            p{
+                border-style:red;
+                border-width:2px;
+                border-style:solid;
+
+                background-color:rgba(27,17,6,0.45);
+                color:whitesmoke;
+                font-size:25px;
+                text-align:justify;
+                padding:5px;
+                margin:30px;
+                width:40%;
+                /* display:block; */
+                float:left;
+                box-sizing:border-box;
+                text-shadow:1px 1px 5px red;
+                box-shadow:2px 2px 3px black;
+                height:400px;
+                outline:5px solid red;
+                outline-offset:10px;
+                line-height:1.5em;
+            }
+            p::selection{
+                color:yellow;
+            }
+            p::before{
+                content:"HELLO";
+                line-height:1.5em;
+            }
+            p::after{
+                content:"HELLO";
+                line-height:1.5em;
+            }
+            .second{
+                    margin:80px;
+                    border-radius:10px;
+                    position:fixed; /* can be fixed absolute realtive sttaic as well*/
+                    left:400px;
+            }
+            img{
+                /* height:400px; */
+                width:80%;
+                margin:30px;
+                border-radius:50%;
+                border:groove 5px rgba(255,0,0,0.239);
+                position:absolute;
+                
+            }
+            .img1{
+                left:2px;
+                top:2px;
+                z-index:3;
+            }
+            .img1{
+                left:10px;
+                top:4px;
+                z-index:5;
+            }
+            a:link{
+                color: red;
+            }
+            a:visited{
+                color:black;
+            }
+            
+            a:hover{
+                color:blue;
+            }
+            a:active{
+                color:green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Introduction to CSS</h1>
+        <p>You can declare document styles inline in the HTML5 markup, in embedded style sheets
+            or in separate CSS files. This section presents inline styles that declare an individual element’s format using the HTML5 attribute style. Inline styles override any other styles 
+            applied using the techniques we discuss later in the chapter. Figure 4.1 applies inline styles
+            to p elements to alter their font size and color.</p>
+          <p>  A second technique for using style sheets is embedded style sheets, which enable you to
+            embed a CSS3 document in an HTML5 document’s head section. Figure 4.3 creates an
+            embedded style sheet containing four styles.The style element (lines 11–18) defines the embedded style sheet. Styles placed in the head
+            apply to matching elements wherever they appear in the body.alter their font size and color.</p>
+           <p style="position:relative" class="second">
+                <img src="/images/20.jpeg" class="img1"/>
+                <img src="/images/21.jpeg" class="img2"/>
+            </p>
+            <a href="exec15.html" >One</a>
+            <a href="exec15.html" >Two</a>
+    </body>
+</html>

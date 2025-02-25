@@ -1,0 +1,84 @@
+<!-- 16.	Create a transformation program that includes four images. When the user hovers over an image, 
+the size of the image should increase by 20%. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>images...</title>
+        <style>
+            div{
+                border: black solid 2px;
+                position:relative ;
+            }
+            div > div{
+                width: 40%;
+                height: 500px;
+                border: solid red 2px;
+                position:absolute;
+                float: left;
+                margin: 20px;
+               
+                padding: 0px;
+                box-sizing: border-box;
+                border-radius: 10px;
+            }
+          
+            /* descendent */
+            div img{
+                height:100%;
+                width: 100%;
+                position: absolute;
+               
+            }
+            div p{
+                position: absolute;
+                color: azure;
+                font-size: 50px;
+                text-transform: uppercase;
+                text-shadow: 2px 3px 3px red;
+                /* z-index: -6; */
+                /* text behind image */
+                z-index: 6;
+                padding: 10px;
+                text-align: center;
+                
+            }
+            div > div:hover{
+                z-index: 13;
+               transform: scale(1.2);
+                background-color: black;
+                transition: 5s;
+               
+            }
+            div > div:hover img{
+                z-index: 16;
+               transform: scale(20%);
+                transition: 2s;
+            }
+            div > div:hover p{
+                
+                transition: 2s;
+                text-shadow: 3px 3px greenyellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <div style=z-index:9;top:200px;left:200px>
+        <img src="images/16.jpeg">
+        <p>Timen and Tide waits for none</p>
+        </div>
+        <div>
+            <img src="images/10.jpeg">
+            <p>copy paste is the best</p>
+            </div>
+            <div style=z-index:15;top:400px;left:400px>
+                <img src="images/11.jpeg">
+                <p>Honesty is the best policy</p>
+                </div>
+                <div style=z-index:25;top:600px;left:600px>
+                    <img src="images/18.jpeg">
+                    <p>Scarcity is the mother of innovation</p>
+                    </div>
+       </div>
+    </body>
+</html>

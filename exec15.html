@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>
+            Intro to CSS
+        </title>
+        <!-- <link href="/labclassexercise/csslab/ex1.css" rel="stylesheet"/> -->
+        <style>
+            h1
+            {
+                    font-size:50px;
+                    text-align:center;
+                    color:rgba(45,145,245,.45);
+                    text-shadow:2px 2px 1px rgba(245,145,45,.45);
+            }
+           
+            .box{
+                height:50%;
+                width:40%;
+                box-sizing: border-box;
+                position:relative;
+                display: inline-block;
+                margin:40px;
+                padding:5px;
+            
+                box-shadow:2px 2px 3px black;
+                
+                border:solid red;
+                outline:auto;
+                outline-offset: 10px;
+                transform:rotate(-15deg);
+            } 
+           
+            .box img{
+                height:100%;
+                width:100%;
+                position: absolute;
+                
+            }
+            .box p{
+                position:absolute;
+                z-index:6;
+                color:bisque;
+                font-size: 30px;
+                text-align: center;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            .dark{
+                color:black;
+            }
+            .box:hover{
+                    transform: scaleY(1.2) translate(30px,50px) rotate(720deg);
+                    
+                    transition: 5s;
+                    border:double 10px green;
+                   
+            }
+            .box:hover img{
+                display:none;
+            }
+            .box:hover q{
+                color:green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Introduction to CSS</h1>
+        <div class="box">
+            <img src="/images/20.jpeg"  />
+            <p >
+                <q class="dark">Time is valuable</q>
+            </p>
+        </div>
+        <div class="box">
+            <img src="/images/21.jpeg"  />
+            <p >
+                <q >Time is valuable</q>
+            </p>
+        </div> 
+        <div class="box">
+            <img src="/images/18.jpeg"  />
+            <p >
+                <q >Time is valuable</q>
+            </p>
+        </div> 
+        <div class="box">
+            <img src="/images/16.jpeg"  />
+            <p >
+                <q class="dark">Time is valuable</q>
+            </p>
+        </div> 
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <title>Autocomplete Input with Datalist</title>
+</head>
+<body>
+    <form method="get" action="internet.html" autocomplete="on" >
+    <h1>Autocomplete Input for Days of the Week</h1>
+    <label FOR="UserN">Enter a day...: </label>
+	<input type="text" placeholder="Enter User name" name="UserN"/><br>
+    <label for="days">Choose a day:</label>
+    <input list="days-of-week" id="days" name="days" placeholder="Start typing a day...">
+    
+    <datalist id="days-of-week">
+        <option value="Monday">
+        <option value="Tuesday">
+        <option value="Wednesday">
+        <option value="Thursday">
+        <option value="Friday">
+        <option value="Saturday">
+        <option value="Sunday">
+    </datalist><br>
+    <input type="submit" name="lg" value="Submit"/>
+</form>
+</body>
+</html>
