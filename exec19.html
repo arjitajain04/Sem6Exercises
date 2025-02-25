@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banasthali University</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .top-bar {
+            background-color: #f8f9fa;
+            padding: 8px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .top-bar-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .top-bar a {
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .main-nav {
+            background-color: rgb(41, 122, 183);
+            padding: 15px 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-menu a {
+            color: rgb(207, 188, 188);
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .hero-section {
+            position: relative;
+            height: 600px;
+            overflow: hidden;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 40%;
+            right: -10%;
+            transform: translate(-50%, -50%);
+            color: maroon;
+            font-size: 64px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .secondary-nav {
+            background-color:rgb(27, 33, 149);
+            padding: 15px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .secondary-nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .secondary-nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .explore-button {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #8c1515;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="secondary-nav">
+        <div class="secondary-nav-container">
+            <a href="#">Information for:</a>
+            <a href="#">Students</a>
+            <a href="#">Faculty and Staff</a>
+            <a href="#">Visitors</a>
+            <a href="#">Alumni</a>
+        </div>
+    </nav>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="#" class="logo">Banasthali Vidyapith</a>
+            <div class="nav-menu">
+                <a href="#">News</a>
+                <a href="Ass18.html">Events</a>
+                <a href="#">Academics</a>
+                <a href="#">Research</a>
+                <a href="#">Health Care</a>
+                <a href="#">Campus Life</a>
+                <a href="#">Admission</a>
+                <a href="#">About</a>
+                <a href="https://www.google.com/"><img src="searchIcon.png" alt="iamge not found!" height="34px" width="50px"></a>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <img src="images/5.jpeg" alt="Campus View" class="hero-image">
+        <h1 class="hero-text">BANASTHALI VIDYAPITH</h1>
+        <a href="https://banasthali.org/"><button class="explore-button">Explore Banasthali</button></a>
+    </div>
+</body>
+</html>
