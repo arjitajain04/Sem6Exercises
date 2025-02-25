@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment</title>
+</head>
+<body>
+
+    <!-- Shopping Cart Header -->
+    <table align="center" cellpadding="12">
+        <tr>
+            <td><a href="index.html"><img src="BookBublogo.png" alt="image not found!" height="40" width="150"></a></td>
+            <td>&nbsp;&nbsp;</td>
+            <td><a href="index.html">Home</a></td>
+            <td>&nbsp;&nbsp;</td>
+            <td><a href="login.html">Login</a></td>
+            <td>&nbsp;&nbsp;</td>
+            <td><a href="register.html">Register</a></td>
+            <td>&nbsp;&nbsp;</td>
+            <td><a href="catalog.html">Book Catalog</a></td>
+            <td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td>
+            <td><a href="https://www.google.com"><img src="searchIcon.png" alt="image not found!" height="50" width="50"></a></td>
+            <td><a href="http://in.linkedin.com"><img src="linkedInButton.png" alt="image not found!" height="30" width="100"></a></td>
+            <td>&nbsp;&nbsp;</td>
+        </tr>
+    </table><br>
+
+    <h1 align="center">Payment</h1>
+
+    <p align="center">
+        <form method="post" action="confirmation.html">
+            <table align="center">
+                <tr>
+                    <td>Card Name: </td>
+                    <td><input type="text" name="card_name" placeholder="Enter cardholder's name" required></td>
+                </tr>
+                <tr>
+                    <td>Card Type: </td>
+                    <td><input type="text" name="card_type" placeholder="Enter card type (e.g., Visa, MasterCard)" required></td>
+                </tr>
+                <tr>
+                    <td>Card Number: </td>
+                    <td><input type="text" name="card" placeholder="Enter card number" required></td>
+                </tr>
+                <tr>
+                    <td>Expiry Date: </td>
+                    <td><input type="text" name="expiry" placeholder="MM/YY" required></td>
+                </tr>
+                <tr>
+                    <td>CVV: </td>
+                    <td><input type="text" name="cvv" placeholder="Enter CVV" required></td>
+                </tr>
+                <tr>
+                    <td>Card Holder Address: </td>
+                    <td><input type="text" name="cardHolder_address" placeholder="Enter cardholder address" required></td>
+                </tr>
+            </table>
+            <p align="center">
+                <input type="submit" value="Pay Now">
+            </p>
+        </form>
+    </p>
+
+</body>
+</html>
