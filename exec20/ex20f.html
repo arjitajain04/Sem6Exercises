@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Feedback</title>
+    <link rel="stylesheet" href="ex20.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Software Product Feedback</h2>
+        <form method="get">
+            <label>Name:</label>
+            <input type="text" name="username" placeholder="Enter the name" required>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Enter the email" required>
+            <label>Rate the Product:</label>
+            <select name="rating" required>
+                <option value="">---Select---</option>
+                <option>Excellent</option>
+                <option>Good</option>
+                <option>Average</option>
+                <option>Poor</option>
+            </select>
+            <label>What features did you like?</label>
+            <div class="checkbox-group">
+                <input type="checkbox" name="features" value="Ease of Use"> Ease of Use<br>
+                <input type="checkbox" name="features" value="Performance"> Performance<br>
+                <input type="checkbox" name="features" value="Design"> Design<br>
+                <input type="checkbox" name="features" value="Support"> Support
+            </div>
+            <label>Would you recommend this product?</label>
+            <input type="radio" name="recommend" value="Yes" required> Yes
+            <input type="radio" name="recommend" value="No" required> No
+            <label>Additional Comments:</label>
+            <textarea name="comments" rows="4" cols="30" placeholder="Enter your comments here..."></textarea>
+            <div class="buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
