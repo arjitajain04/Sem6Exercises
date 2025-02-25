@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise18</title>
+        <style>
+            .box{
+                height:50px;
+                width:50px;
+                background-color:brown;
+                margin-right:4px;
+                box-shadow:2px 2px 3px black;
+                transform:rotate(45deg);
+                position:absolute;
+                bottom:210px;
+                right:5%;     
+            } 
+            .box>p{
+                transform:rotate(-45deg);
+                text-align: right;
+                padding-left: 40px;
+                padding-bottom:50px;
+                font-size: 15px;
+            }
+            .card{
+                height:500px;
+                width:300px;
+                border:1px black solid;
+                background-color: azure;
+                box-shadow: 1px 1px 2px rgba(15,15,15);
+                border-radius: 5px;
+                padding:10px;
+                display: flex;
+                flex-direction: column;
+                margin: 10px;
+                position:relative;
+            }
+            .card>img{
+                width:100%;
+                height:60%;
+                border-radius: inherit;
+            }
+            .card>h1{
+                color:blue;
+                font-size: 30px;
+                text-shadow: 2px 3px 4px rgba(240,20,123,.6);
+                margin:0;
+            }
+            .card>p{
+                text-align: justify;
+                font-size: 18px;
+                color:chocolate;
+                margin:0;
+            }
+            .card>button{
+                background-color: chartreuse;
+                color:blue;
+                height:2em;
+                width:50%;
+                font-size:18px;
+                font-weight: 800;
+                border-radius:10px;
+                margin:auto;
+            }
+            .card:hover{
+                box-shadow: 3px 3px 5px rgba(15,15,15);
+            }
+            .card:hover img{
+                transform:scale(1.02);
+            }
+            .card:hover p{
+                color:blue;
+            }
+            div>table{
+                margin:30px;
+                align-content: flex-end;
+            }
+            .head{
+                height: 40px;
+                width: 100%;
+                background-color: white;
+                box-shadow: 2px 2px 2px black;
+                align-items: center;
+            }
+            nav ul{
+                text-align: center;
+            }
+            nav ul li{
+                display:inline;
+                margin:0 18px;
+            }
+            nav ul li a{
+                color:black;
+            }
+            .info-row {
+                display: flex;
+                justify-content: space-evenly;
+                color: white;
+            }
+            .info-row td {
+                font-size: 18px;
+                padding-left: 21px;
+            }
+            .info-row td:first-child {
+                padding-left: 100px;
+                font-weight: bold;
+            }
+            .info-row td:last-child {
+                padding-right: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div style="display:flex;flex-direction: row;width:auto;background-color:rgb(27, 33, 149); height:3%;">
+                <h1 style="color: white;">&nbsp;Banasthali Vidyapith</h1>
+                <table>
+                    <tr class="info-row">
+                        <td>Information For:</td>
+                        <td>Students</td>
+                        <td>Faculty & Staff</td>
+                        <td>Families</td>
+                        <td>Visitors</td>
+                        <td>Alumni</td>
+                        <td><img src="searchIcon.png" alt="image not found!" height="34px" width="50px"></td>
+                        <td>Search</td>
+                    </tr>
+                </table> 
+            </div>
+            <div class="head">
+                <nav>
+                    <ul>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#academics">Academics</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#research">Research</a></li>
+                        <li><a href="#healthcare">HealthCare</a></li>
+                        <li><a href="#campuslife">Campus Life</a></li>
+                        <li><a href="#admission">Admission</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div style="display:flex;flex-direction:row;">
+            <div class="card">
+                <img src="bv1.jpg"/>
+                <div class="box"><p><b>Feb 23</b></p></div>
+                <h1>Shilp Mandir</h1>
+                <p>Shilp Mandir is the name of a documentary film about the design department at Banasthali Vidyapith.</p>
+                <button>Apply Now</button>
+            </div>
+            <div class="card">
+                <img src="bv2.jpg"/>
+                <div class="box"><p><b>Feb 23</b></p></div>
+                <h1>Urja Mandir</h1>
+                <p>It has a large campus with a central library, departmental libraries, school libraries, auditorium, conference hall.</p>
+                <button>Apply Now</button>
+            </div>
+            <div class="card">
+                <img src="bv3.jpg"/>
+                <div class="box"><p><b>Feb 23</b></p></div>
+                <h1>Sur Mandir</h1>
+                <p>The Department of Music at Banasthali Vidyapith is also known as the Sur Mandir. It is also known as the Music World.</p>
+                <button>Apply Now</button>
+            </div>
+            <div class="card">
+                <img src="bv4.jpg"/>
+                <div class="box"><p><b>Feb 23</b></p></div>
+                <h1>Surya Mandir</h1>
+                <p>It is a place where students can get the prospectus and application form for the university's aptitude test.</p>
+                <button>Apply Now</button>
+            </div>
+        </div>
+    </body>
+</html>
