@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Feedback</title>
+</head>
+
+<body>
+    <h1>Software Product Feedback</h1>
+    <form method="get">
+        <table border="1" cellpadding="10" cellspacing="">
+            <tr>
+                <!-- name and for same -->
+                <td><label for="username">Enter Name</label></td>
+                <td><input type="text" id="username" name="username" placeholder="Enter the name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Enter Email</label></td>
+                <td><input type="email" id="email" name="email" placeholder="Enter the email" required></td>
+            </tr>
+            <tr>
+                <td><label for="rating">How would you rate the product?</label></td>
+                <td>
+                    <input type="text" list="rating" name="rating" placeholder="---Select---" required>
+                    <datalist id="rating" required>
+                        <option>Excellent</option>
+                        <option>Good</option>
+                        <option>Average</option>
+                        <option>Poor</option>
+                    </datalist></br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="features">What features did you like?</label></td>
+                <td>
+                    <input type="checkbox" name="features" value="r">
+                    Ease of Use<br>
+                    <input type="checkbox" id="feature2" name="features" value="s">
+                    Performance<br>
+                    <input type="checkbox" id="feature3" name="features" value="p">
+                    Design<br>
+                    <input type="checkbox" id="feature4" name="features" value="t">
+                    Support
+                </td>
+            </tr>
+            <tr>
+                <td><label for="recommend">Would you recommend this product?</label></td>
+                <td>
+                    <input type="radio" name="recommend" value="Yes" required>Yes</br>
+                    <input type="radio" name="recommend" value="No" required>No </br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="comments">Additional Comments:</label></td>
+                <td><textarea name="comments" rows="4" cols="30" placeholder="Enter your comments here..."></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="s" value="Submit">
+                    <input type="reset" name="r" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
