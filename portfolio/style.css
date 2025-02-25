@@ -1,0 +1,513 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #121212;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(50, 50, 50, 0.9);
+    padding: 15px 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 50px 20px;
+}
+
+
+/*----------------------------------------------------------------------------------------------------*/
+/* About Section */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('1.jpg') no-repeat center/cover;
+    position: relative;
+    text-align: center;
+}
+
+/* Profile Card */
+.about-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid transparent;
+    transition: all 0.4s ease;
+}
+
+/* Gradient Border Effect */
+.about-container:hover {
+    border-image: linear-gradient(45deg, #ffcc00, #ff33cc);
+    border-image-slice: 1;
+}
+
+/* Profile Image */
+.about-container img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #ffcc00;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.about-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Heading */
+.about-container h1 {
+    font-size: 32px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+.about-container p.role {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Description */
+.about-container p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------*/
+/* Technical Skills Section */
+#skills { background: url('new.jpg') no-repeat center/cover; }
+#skills .content {
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+#skills h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Individual Skill Badges */
+.skill-item {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+.skill-item:hover {
+    background: #ffcc00;
+    color: #121212;
+    transform: scale(1.1);
+}
+
+
+/*----------------------------------------------------------------------------------------------------*/
+/* Education Section */
+
+#education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('new1.jpg') no-repeat center/cover;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+/* Education Container */
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Education Card */
+.education-card {
+    background: linear-gradient(135deg, #ffcc00, rgba(255, 102, 0, 0.3));
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.4);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.education-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(255, 102, 0, 0.5);
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------------------------------*/
+
+/* Mini Projects Section */
+#projects {
+    background: url('new3.png') no-repeat center/cover;
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Section Title */
+#projects h2 {
+    font-size: 32px;
+    color: #ffcc00;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+/* Project Grid Container */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    width: 80%;
+    max-width: 1000px;
+    justify-content: center;
+}
+
+/* Individual Project Card */
+.project {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Project Title */
+.project h3 {
+    font-size: 22px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+/* Project Description */
+.project p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Hover Effect */
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Hover Border Glow */
+.project::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    border-radius: 15px;
+    background: linear-gradient(45deg, #ffcc00, #ff33cc);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.project:hover::before {
+    opacity: 1;
+}
+/*-------------------------------------------------------------------------------------------------------*/
+/* Contact Section */
+/* Contact Section */
+/* Contact Section */
+#contact {
+    background: url('contact-bg.jpg') no-repeat center/cover;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2); /* Slightly increased opacity */
+    border-radius: 15px;
+    padding: 40px;
+    width: 80%;
+    max-width: 1000px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Form (Left Side) */
+.contact-form {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+/* ✅ Fixed input visibility issues */
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.7); /* Ensures high visibility */
+    color: #ffffff;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.contact-form input::placeholder, 
+.contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Ensures input fields are accessible */
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    background: rgba(0, 0, 0, 0.9);
+    border: 1px solid #ffcc00;
+    transform: scale(1.02);
+}
+
+/* Submit Button */
+.contact-form button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #121212;
+    background: #ffcc00;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #ff9933;
+}
+
+/* Contact Info (Right Side) */
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    color: white;
+}
+
+.contact-info h2 {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact-info i {
+    color: #ffcc00;
+    margin-right: 10px;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #ffcc00;
+}
+
+
+
+
+/* Soft Skills Section */
+#soft-skills {
+    background: url('soft-skills-bg.jpg') no-repeat center/cover;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#soft-skills .soft-skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.soft-skill-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.soft-skill-card img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.soft-skill-card h3 {
+    color: #ffcc00;
+}
+
+.soft-skill-card:hover {
+    transform: scale(1.05);
+}
+
+
+/* Remove Blurry Effect */
+section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+/* Ensure text is on top */
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+
+/* Projects Section */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.project {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    width: 30%;
+    min-width: 250px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
